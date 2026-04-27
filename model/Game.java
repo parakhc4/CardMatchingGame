@@ -10,7 +10,7 @@ public class Game {
 
     public Game(int gridSize){
         this.grid = new Grid(gridSize);
-        
+        this.gameStatus = GameStatus.ONGOING;
     }   
 
     public int getCurrentScore() {
@@ -43,6 +43,16 @@ public class Game {
 
     public void setGameStatus(GameStatus gameStatus) {
         this.gameStatus = gameStatus;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " currentScore='" + getCurrentScore() + "'" +
+            ", grid='" + getGrid() + "'" +
+            ", firstFlippedCard='" + getFirstFlippedCard() + "'" +
+            ", gameStatus='" + getGameStatus() + "'" +
+            "}";
     }
 
 

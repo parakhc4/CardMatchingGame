@@ -1,7 +1,7 @@
 package model;
 
 public class TurnResult {
-    Card flippedCard;
-    Boolean isMatch;     
-    Boolean isGameComplete;
+    private Card flippedCard;
+    private Boolean isMatch;     
+    private Boolean isGameComplete;
 }

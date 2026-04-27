@@ -39,6 +39,16 @@ public class Card {
         this.cardStatus = cardStatus;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+            " id='" + getId() + "'" +
+            ", cardNumber='" + getCardNumber() + "'" +
+            ", cardStatus='" + getCardStatus() + "'" +
+            ", r='" + getR() + "'" +
+            "}";
+    }
+
     public Random getR() {
         return this.r;
     }
